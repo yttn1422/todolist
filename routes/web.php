@@ -17,7 +17,7 @@ use App\Http\Controllers\FolderController;
 
 
 Route::get('/', function () {
-    return view('/folders/{id}/tasks');
+    return view('/folders/1/tasks');
 });
 
 //一覧表示
