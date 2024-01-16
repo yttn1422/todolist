@@ -17,9 +17,10 @@ use App\Http\Controllers\FolderController;
 
 
 Route::get('/', function () {
-    return view('/folders/tasks');
+    return view('/home');
 });
-
+//home
+Route::get('/home', [FolderController::class, 'index']);
 //一覧表示
 Route::get('/folders/{id}/tasks', [TaskController::class, 'index'])->name('tasks.index');
 //フォルダ作成
