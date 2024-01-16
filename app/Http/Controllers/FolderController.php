@@ -26,4 +26,8 @@ class FolderController extends Controller
             'id' => $folder->id,
         ]);
     }
+    public function index()
+    {
+        return view('home');
+    }
 }
